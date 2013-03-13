@@ -1,12 +1,10 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<ol id="article-list">
 {% for article in articles %}
-<li>
+<article>
   {% include 'article_header.html' %}
   {% include 'article_footer.html' %}
-</li>
+</article>
 {% endfor %}
-</ol>
 {% endblock %}
