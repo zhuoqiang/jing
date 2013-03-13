@@ -10,6 +10,7 @@ $theme: 'blog.tangcha.tc'
 $theme: 'technium.me'
 $theme: 'tangcha.tc'
 $theme: 'geli.org'
+$theme: ''
       
 @if $theme == 'technium.me'
   body      
@@ -37,6 +38,10 @@ $theme: 'geli.org'
     border-bottom: 1px dotted rgb(217, 217, 217)
 
 
+=bottom-seperator
+  border-bottom: 1px solid rgb(204, 204, 204)  
+    
+    
 @if $theme == 'geli.org'
   body      
     font-family: Arial    
@@ -125,6 +130,7 @@ $theme: 'geli.org'
 
 article
   &>footer
+    color: rgb(183,182,182)    
     +main-block(div, 6)
     +main-block(ul, 6)
     ul
@@ -140,21 +146,29 @@ article
   
       
 body
+  background: image-url('grey.png') repeat scroll 0px 0px rgb(251, 251, 246)
   &>footer
     +main-block(p)
+    color: rgb(183,182,182)      
 
   &>section 
+    +bottom-seperator
     +main-block(article)
 
   &>header
+    +bottom-seperator
+    padding: 20px 40px
+
     +main-block(hgroup)
     h1
-      +rotate(-2deg)
-      +single-text-shadow(1px,2px,2px,false,#f0f)        
+      color: #888
+      +rotate(3deg)
+      +text-shadow
     h2
-      +single-text-shadow(1px,2px,2px,false,#0f0)
+      color: #aaa
+      +text-shadow
       font-size: 1.5em
-      +rotate(2deg)
+      +rotate(5deg)
         
         
 a
