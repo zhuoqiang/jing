@@ -1,0 +1,12 @@
+- CDN jquery/yui3
+- use *.min.js, 
+- use *.min.css
+- make sematic article
+- clean style tag
+- math support
+- date i18n: moment.js
+- code hightlight
+- use web font for title  
+- use icon for comment ...
+- i18n
+- Chinese Font? font-family: Verdana,"Helvetica Neue", Helvetica, Arial, sans-serif;  font-size: 13px; line-height: 18px;
