@@ -1,0 +1,14 @@
+<footer class="entry-info">
+  <time datetime="{{article.date.isoformat()}}" pubdate>{{ article.locale_date }}</time>
+  {% if article.author %}
+  <span class="author">{{ article.author }}</span>
+  {% endif %}
+  <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
+  {% if article.tags %}
+  <ul class="taglist">
+    {% for tag in article.tags %}
+    <li><a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a></li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+</footer>
