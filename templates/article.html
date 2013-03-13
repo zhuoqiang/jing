@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}{{ SITENAME }} | {{ article.title }} {% endblock %}
+
+{% block content %}
+<article>
+  {% include 'article_header.html' %}
+  {% include 'article_footer.html' %}
+  <div class="entry-content">
+    {{ article.content }}
+  </div>
+</article>
+{% include 'comment.html' %}
+{% endblock content %}
