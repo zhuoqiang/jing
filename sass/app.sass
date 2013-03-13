@@ -1,0 +1,161 @@
+@import settings
+@import foundation
+@import compass/typography/links/unstyled-link
+@import compass/css3/transform
+@import compass/css3/text-shadow
+@import compass/typography/links/hover-link
+
+$theme: 'blog.tangcha.tc'
+$theme: 'technium.me'
+$theme: 'tangcha.tc'
+$theme: 'geli.org'
+      
+@if $theme == 'technium.me'
+  body      
+    background-color: rgb(247, 245, 240)
+    color: rgb(34, 34, 34)
+    font-family: Gotham,Helvetica,"冬青黑体简体中文 W3","Hiragino Sans GB","Microsoft JhengHei","Microsoft YaHei"
+    line-height: 1.8em
+
+  p
+    font-family: Gotham,Helvetica,"冬青黑体简体中文 W3","Hiragino Sans GB","Microsoft JhengHei","Microsoft YaHei"
+    line-height: 1.8em
+    font-size: 14px
+    color: rgb(34, 34, 34)
+      
+      
+  h1, h2, h3, h4
+    font-size: 24px
+    font-weight: normal
+    line-height: 1.8em
+    border-bottom: 1px dotted rgb(217, 217, 217)
+    color: rgb(17, 17, 17)
+  
+  article>footer
+    font-size: 10px
+    border-bottom: 1px dotted rgb(217, 217, 217)
+
+
+@if $theme == 'geli.org'
+  body      
+    font-family: Arial    
+    color: rgb(51,51,51)
+
+  body>header
+    border-bottom: 1px solid rgb(204, 204, 204)
+    padding: 20px 40px
+      
+  p
+    margin: 17px 0
+    text-align: justify
+    font-family: Arial
+    line-height: 1.8em
+    font-size: 13px
+    color: rgb(51,51,51)
+      
+      
+  body>section
+    border-bottom: 1px solid rgb(204, 204, 204)
+    padding: 20px 40px
+    
+  h1, h2, h3, h4
+    font-size: 18px
+    line-height: 1.5em
+    color: rgb(17,17,17)
+  
+  article>footer
+    color: rgb(183,182,182)
+      
+  
+@if $theme == 'blog.tangcha.tc'
+  html
+    background: image-url('bg.png') repeat scroll 0px 0px rgb(251, 251, 246)
+      
+  body      
+    color: rgb(51,51,51)
+    background-color: transparent
+
+  body>header
+    background: image-url('separator.png') no-repeat scroll center bottom transparent
+      
+  p
+    font: 0.875em/1.5 "Myriad Pro","myriad-pro-1","myriad-pro-2",sans-serif    
+    line-height: 24px
+      
+  body>section
+    background: image-url('separator.png') no-repeat scroll center bottom transparent
+    
+  h1, h2, h3, h4
+    font-size: 19.7px
+    line-height: 30px
+
+      
+@if $theme == 'tangcha.tc'
+  html
+    background: image-url('bg.png') repeat scroll 0px 0px rgb(251, 251, 246)
+      
+  body      
+    color: rgb(34,34,34)
+    background-color: rgb(250, 250, 249)
+
+  body>header
+    background: image-url('separator.png') no-repeat scroll center bottom transparent
+      
+  p
+    font-family: 'Helvetica Neue','Hiragino Sans GB',Helvetica,Arial,Sans-serif
+    line-height: 24px
+    font-size: 14px
+    color: rgb(34,34,34)
+    
+  body>section
+    background: image-url('separator.png') no-repeat scroll center bottom transparent
+    
+  h1, h2, h3, h4
+    font-size: 24px
+    line-height: 30px
+      font-weight: 700
+      
+      
+      
+=main-block($child: '*', $columns:12, $float:left)
+  +grid-row
+  &>#{$child}
+    +grid-column($columns:$columns, $float:$float)
+
+article
+  &>footer
+    +main-block(div, 6)
+    +main-block(ul, 6)
+    ul
+      +inline-list
+      
+  &>header
+    +main-block
+
+  &>div
+    +main-block
+    ul
+      +grid-column(12)
+  
+      
+body
+  &>footer
+    +main-block(p)
+
+  &>section 
+    +main-block(article)
+
+  &>header
+    +main-block(hgroup)
+    h1
+      +rotate(-2deg)
+      +single-text-shadow(1px,2px,2px,false,#f0f)        
+    h2
+      +single-text-shadow(1px,2px,2px,false,#0f0)
+      font-size: 1.5em
+      +rotate(2deg)
+        
+        
+a
+  +hover-link
+  +unstyled-link
