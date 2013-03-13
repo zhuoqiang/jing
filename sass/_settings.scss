@@ -13,12 +13,14 @@
 
 // This is the default html and body font-size for the base em value.
 // $em-base: 16px;
+/* $em-base: 18px; */
 
 // We use these to control various global styles
 // $body-bg: #fff;
 // $body-font-color: #222;
-$body-font-color: rgb(51,51,51)
 // $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+/* $body-font-family: "ff-tisa-web-pro-1","ff-tisa-web-pro-2","Lucida Grande","Hiragino Sans GB","Hiragino Sans GB W3","Microsoft YaHei",sans-serif; */
+$body-font-family: "ff-tisa-web-pro-1","ff-tisa-web-pro-2" "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 // $body-font-weight: normal;
 // $body-font-style: normal;
 
@@ -52,6 +54,7 @@ $body-font-color: rgb(51,51,51)
 //
 
 // $row-width: 62.5em;
+$row-width: 50em;
 // $column-gutter: 1.875em;
 // $total-columns: 12;
 
@@ -88,6 +91,11 @@ $body-font-color: rgb(51,51,51)
 // $h5-font-size: emCalc(18px);
 // $h6-font-size: 1em;
 
+$h4-font-size: emCalc($em-base);
+$h3-font-size: emCalc($em-base*1.2);
+$h2-font-size: emCalc($em-base*1.5);
+$h1-font-size: emCalc($em-base*1.5);
+
 // These control how subheaders are styled.
 // $subheader-line-height: 1.4;
 // $subheader-font-color: lighten($header-font-color, 30%);
@@ -118,6 +126,7 @@ $body-font-color: rgb(51,51,51)
 // $anchor-text-decoration: none;
 // $anchor-font-color: $primary-color;
 // $anchor-font-color-hover: darken($primary-color, 5%);
+$anchor-font-color-hover: lighten($body-font-color, 30%);
 
 // We use these to style the <hr> element
 // $hr-border-width: 1px;
@@ -127,7 +136,6 @@ $body-font-color: rgb(51,51,51)
 
 // We use these to style lists
 // $list-style-position: outside;
-// $list-style-position: inside;
 // $list-side-margin: emCalc(18px);
 // $definition-list-header-weight: bold;
 // $definition-list-header-margin-bottom: .3em;
