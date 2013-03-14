@@ -1,17 +1,17 @@
-- CDN jquery/yui3
-- use *.min.js, 
-- use *.min.css
-- make sematic article
-- clean style tag
-- math support
-- syntax hightlight
-- date i18n: moment.js
-- code hightlight
-- use web font for title  
-- use icon for comment ...
-- i18next
-- Chinese Font? font-family: Verdana,"Helvetica Neue", Helvetica, Arial, sans-serif;  font-size: 13px; line-height: 18px;
-- Search
-- 关灯效果  
-- back to top/bottom button
-- clean up unused import
+* use *.min.js, 
+* use *.min.css
+* make sematic article
+* clean style tag
+* math support
+* syntax hightlight
+* code hightlight
+* use web font for title  
+* use icon for comment ...
+* i18next
+* Chinese Font? font*family: Verdana,"Helvetica Neue", Helvetica, Arial, sans*serif;  font*size: 13px; line*height: 18px;
+* Search
+* 关灯效果  
+* back to top/bottom button
+* clean up unused import
+* DONE CDN jquery/yui3
+* DONE date i18n: moment.js
