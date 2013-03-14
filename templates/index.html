@@ -5,6 +5,11 @@
 <article>
   {% include 'article_header.html' %}
   {% include 'article_footer.html' %}
+  {% if loop.first %}
+  <div>
+    {{ article.summary }}
+  </div>
+  {% endif %}
 </article>
 {% endfor %}
 {% endblock %}
