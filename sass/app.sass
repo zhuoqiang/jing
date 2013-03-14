@@ -71,8 +71,12 @@ ol, ul
 ul
   list-style-type: square
     
-    
 article
+  a
+    +hover-link
+  
+  padding-top: 1em
+  +bottom-seperator
   h1
     font-size: $h2-font-size
   h2
@@ -94,32 +98,31 @@ article
   
       
 body
-  background: image-url("bg.png") repeat scroll 0px 0px rgb(251, 251, 246)
+  /* background: image-url("bg.png") repeat scroll 0px 0px rgb(251, 251, 246)
   &>footer
     +small
     +column-block(p)
     color: rgb(183,182,182)      
+    padding-top: 2em
 
   &>section 
-    +bottom-seperator
     +column-block(article)
 
   &>header
+    
     +bottom-seperator
-    padding: 20px 40px
+    padding-top: 2em      
+    /* +rotate(1deg)        
 
     +column-block(hgroup)
     h1
       color: $small-font-color
       +text-shadow
-      +rotate(2deg)        
       font-size: 1.5em
     h2
       color: $small-font-color
       font-weight: 100
-      +rotate(3deg)
       font-size: 1em
         
 a
-  +hover-link
   +unstyled-link
