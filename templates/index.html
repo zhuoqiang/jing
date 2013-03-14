@@ -8,6 +8,7 @@
   {% if loop.first %}
   <div>
     {{ article.summary }}
+    <a href="{{ SITEURL }}/{{ article.url }}"><i class="icon-circle-arrow-right"> ... </i></a>
   </div>
   {% endif %}
 </article>
