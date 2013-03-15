@@ -19,4 +19,16 @@ $(document).ready(function() {
         var time = t.attr('datetime');
         t.html(moment(time).fromNow());
     });
+
+
+    // $('article>footer').hide();
+    
+    // $('article').hover(
+    //     function () {
+    //         $(this).find('footer').show();
+    //     },
+    //     function () {
+    //         $(this).find('footer').hide();
+    //     }
+    // );
 })
