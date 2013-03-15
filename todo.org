@@ -1,18 +1,21 @@
 * use *.min.js, 
 * use *.min.css
 * make sematic article
+* Space adjust
+* Font size adjust  
 * clean style tag
-* math support
 * syntax hightlight
 * code hightlight
 * use web font for title  
 * use icon for comment ...
-* i18next
-* Chinese Font? font*family: Verdana,"Helvetica Neue", Helvetica, Arial, sans*serif;  font*size: 13px; line*height: 18px;
 * Search
+* RSS icon  
 * 关灯效果  
 * back to top/bottom button
-* clean up unused import
-* icon font-awesome  
+* DONE i18next
+* DONE Chinese Font? font*family: Verdana,"Helvetica Neue", Helvetica, Arial, sans*serif;  font*size: 13px; line*height: 18px;
+* DONE clean up unused import
+* DONE icon font-awesome  
+* DONE math support
 * DONE CDN jquery/yui3
 * DONE date i18n: moment.js
