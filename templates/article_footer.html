@@ -1,7 +1,7 @@
 <footer>
   <p>
+    <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a> · 
     <time datetime="{{article.date.isoformat()}}" pubdate>{{ article.locale_date }}</time>
-    <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
   </p>
   {% if article.tags %}
   <ul>

@@ -4,11 +4,13 @@
 {% for article in articles %}
 <article>
   {% include 'article_header.html' %}
-  {% include 'article_footer.html' %}
-  {% if loop.first %}
+  <!-- {% include 'article_footer.html' %} -->
+  {% if loop.first and False %}
   <div>
+    <section>
     {{ article.summary }}
     <a href="{{ SITEURL }}/{{ article.url }}"><i class="icon-play"> ... </i></a>
+    </section>
   </div>
   {% endif %}
 </article>

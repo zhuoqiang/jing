@@ -1,8 +1,7 @@
 * use *.min.js, 
 * use *.min.css
-* make sematic article
+* make sematic article and enable reader mode
 * Space adjust
-* Font size adjust  
 * clean style tag
 * syntax hightlight
 * code hightlight
@@ -12,6 +11,9 @@
 * RSS icon  
 * 关灯效果  
 * back to top/bottom button
+* table  
+* syntax hightlight tune, client or server?  
+* DONE Font size adjust  
 * DONE i18next
 * DONE Chinese Font? font*family: Verdana,"Helvetica Neue", Helvetica, Arial, sans*serif;  font*size: 13px; line*height: 18px;
 * DONE clean up unused import
