@@ -5,10 +5,12 @@
 {% block content %}
 <article>
   {% include 'article_header.html' %}
-  {% include 'article_footer.html' %}
   <div>
-    {{ article.content }}
+    <section>
+      {{ article.content }}
+    </section>
   </div>
+  {% include 'article_footer.html' %}
 </article>
 {% include 'comment.html' %}
 {% endblock content %}
