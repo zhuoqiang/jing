@@ -894,13 +894,14 @@ $anchor-font-color-hover: lighten($primary-color, 50%);
 //
 
 // These control the background color for the table and even rows
-// $table-bg: #fff;
+$table-bg: $body-bg;
 // $table-even-row-bg: #f9f9f9;
 
 // These control the table cell border style
 // $table-border-style: solid;
 // $table-border-size: 1px;
 // $table-border-color: #ddd;
+$table-border-color: $body-font-color;
 
 // These control the table head styles
 // $table-head-bg: #f5f5f5;
