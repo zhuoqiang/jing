@@ -13,7 +13,7 @@
 @import foundation/components/visibility
 // @import "foundation/components/block-grid";
 @import foundation/components/type
-// @import "foundation/components/buttons";
+// @import foundation/components/buttons
 // @import "foundation/components/forms";
 // @import "foundation/components/custom-forms";
 // @import "foundation/components/button-groups";
@@ -29,7 +29,7 @@
 // @import "foundation/components/alert-boxes";
 // @import "foundation/components/breadcrumbs";
 // @import "foundation/components/keystrokes";
-// @import "foundation/components/labels";
+// @import foundation/components/labels
 @import foundation/components/inline-lists
 // @import "foundation/components/pagination";
 // @import "foundation/components/panels";
@@ -101,14 +101,23 @@ article
 
   &>div
     +column-block
-    div,table
+      
+    img
+      display: block
+      margin-left: auto
+      margin-right: auto
+        
+    table
       margin: 1em
+        
     .highlight
+      margin: 1em
       background: transparent
       font-size: 1em
       line-height: 1.4
       padding-left: 1em
-      border-left: 1px solid #bbb
+      border-left: $blockquote-border
+      
     
 body
   &>footer

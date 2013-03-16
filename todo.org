@@ -1,14 +1,14 @@
 * use *.min.js, 
 * use *.min.css
 * clean style tag
-* syntax hightlight
-* code hightlight
 * use icon for comment ...
 * Search
-* RSS icon  
+* RSS icon
+* img  
 * 关灯效果  
 * back to top/bottom button
 * syntax hightlight tune, client or server?  
+* DONE syntax hightlight
 * DONE Space adjust
 * DONE table  
 * DONE make sematic article and enable reader mode
