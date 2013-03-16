@@ -4,7 +4,7 @@
   </p>
   <ul>
     {% for tag in article.tags %}
-    <li><a href="{{ SITEURL }}/{{ tag.url }}"><i class="icon-tag"></i> {{ tag }}</i></a>
+    <li><a href="{{ SITEURL }}/{{ tag.url }}"><i class="icon-tag"></i> <span i18n>{{tag}}</span></i></a>
     {% endfor %}
   </ul>
 </footer>
