@@ -87,16 +87,21 @@ article
     font-size: $h4-font-size
     
   &>footer
-    +column-block(p, 4)
-    +column-block(ul, 8)
-    +non-important-font
+    +column-block(p, 3)
+    +column-block(ul, 9)
+    margin-top: 1em
+    margin-bottom: 1em
+      
+    &>p
+      +non-important-font
     time
       margin-right: 1em
-    ul
+    &>ul
       +inline-list
       text-align: right
-    ul li
-      float: right
+      +non-important-font
+      li
+        float: right
       
   &>header
     +column-block
@@ -122,6 +127,7 @@ article
       border-left: $blockquote-border
         
     margin-top: 1.5em
+    margin-bottom: 1.5em
     
 body
   &>footer
