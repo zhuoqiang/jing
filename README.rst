@@ -1,8 +1,7 @@
-Jing 净: Dead Clean Pelican Blog Theme
-###########################################
-:date: 2013-03-16 22:50
+净 Jing! - Dead Clean Pelican Blog Theme
+#########################################
 
-Jing is a Pelican blog theme with a dead simple and clean UI
+Jing is a Pelican blog theme with a extreme simple and clean UI
 
 Live demo: http://zhuoqiang.me
 
