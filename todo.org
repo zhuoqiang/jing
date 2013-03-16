@@ -7,6 +7,7 @@
 * 关灯效果  
 * back to top/bottom button
 * syntax hightlight tune, client or server?  
+* indent for list/table ... ?
 * DONE center img  
 * DONE syntax hightlight
 * DONE Space adjust
