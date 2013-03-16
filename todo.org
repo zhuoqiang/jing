@@ -4,10 +4,10 @@
 * use icon for comment ...
 * Search
 * RSS icon
-* img  
 * 关灯效果  
 * back to top/bottom button
 * syntax hightlight tune, client or server?  
+* DONE center img  
 * DONE syntax hightlight
 * DONE Space adjust
 * DONE table  
