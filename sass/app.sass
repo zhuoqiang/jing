@@ -1,10 +1,10 @@
-@import normalize.scss
+@import normalize
 
 // Global Foundation Settings
 @import settings
 
 // Comment out this import if you are customizing you imports below
-// @import "foundation";
+// @import foundation
 
 // Import specific parts of Foundation by commenting the import "foundation"
 // and uncommenting what you want below. You must uncomment the following if customizing
@@ -13,38 +13,38 @@
 @import foundation/components/global
 @import foundation/components/grid
 @import foundation/components/visibility
-// @import "foundation/components/block-grid";
+// @import foundation/components/block-grid
 @import foundation/components/type
-// @import foundation/components/buttons
-// @import "foundation/components/forms";
-// @import "foundation/components/custom-forms";
-// @import "foundation/components/button-groups";
-// @import "foundation/components/dropdown-buttons";
-// @import "foundation/components/split-buttons";
-// @import "foundation/components/flex-video";
-// @import "foundation/components/section";
-// @import "foundation/components/top-bar";
-// @import "foundation/components/orbit";
-// @import "foundation/components/reveal";
-// @import "foundation/components/joyride";
-// @import "foundation/components/clearing";
-// @import "foundation/components/alert-boxes";
-// @import "foundation/components/breadcrumbs";
-// @import "foundation/components/keystrokes";
+@import foundation/components/buttons
+// @import foundation/components/forms
+// @import foundation/components/custom-forms
+// @import foundation/components/button-groups
+// @import foundation/components/dropdown-buttons
+// @import foundation/components/split-buttons
+// @import foundation/components/flex-video
+// @import foundation/components/section
+// @import foundation/components/top-bar
+// @import foundation/components/orbit
+// @import foundation/components/reveal
+// @import foundation/components/joyride
+// @import foundation/components/clearing
+// @import foundation/components/alert-boxes
+// @import foundation/components/breadcrumbs
+@import foundation/components/keystrokes
 // @import foundation/components/labels
 @import foundation/components/inline-lists
-// @import "foundation/components/pagination";
-// @import "foundation/components/panels";
-// @import "foundation/components/pricing-tables";
-// @import "foundation/components/progress-bars";
-// @import "foundation/components/side-nav";
-// @import "foundation/components/sub-nav";
-// @import "foundation/components/switch";
-// @import "foundation/components/magellan";
+// @import foundation/components/pagination
+// @import foundation/components/panels
+// @import foundation/components/pricing-tables
+// @import foundation/components/progress-bars
+// @import foundation/components/side-nav
+// @import foundation/components/sub-nav
+// @import foundation/components/switch
+// @import foundation/components/magellan
 @import foundation/components/tables
 @import foundation/components/thumbs
-// @import "foundation/components/tooltips";
-// @import "foundation/components/dropdown";
+// @import foundation/components/tooltips
+// @import foundation/components/dropdown
 
 // compass 
 @import compass/typography/links/unstyled-link
@@ -68,12 +68,6 @@ $seperator: 1px solid rgb(197, 197, 197)
   font-size: $font-size
   color: $small-font-color
       
-ol, ul
-  margin: 1em 2em
-
-li
-  margin-top: 0.2em
-    
 ul
   list-style-type: square
     
@@ -87,10 +81,11 @@ article
 
   h2
     font-size: $h4-font-size
+    margin-top: 2em
     
   &>footer
-    +column-block(p, 3)
-    +column-block(ul, 9)
+    +column-block(p, 4)
+    +column-block(ul, 8)
     margin-top: 1em
     margin-bottom: 1em
       
@@ -109,25 +104,39 @@ article
     +column-block
 
   &>div
+    ol, ul
+      margin: 1em 2em
+
+    li
+      margin-top: 0.2em
+    
     +column-block
+
+    .kbd
+      +keystroke
+    
+    .line
+      line-height: $paragraph-line-height
       
     img
       +thumb
       display: block
-      margin-left: auto
-      margin-right: auto
+      margin: 1em auto
+
+    iframe
+      margin: 1em 0
         
     table
       margin: 1em
         
     blockquote, .highlight
-      margin: 1em
+      margin: 1em 0
       background: transparent
-      font-size: 1em
+      font-size: 0.95em
       line-height: 1.4
       padding-left: 1em
       border-left: $blockquote-border
-        
+
     margin-top: 1.5em
     margin-bottom: 1.5em
     
@@ -136,15 +145,17 @@ body
     +column-block
     text-align: center
     +non-important-font
-    margin-top: 1em
-      
+    margin-top: 1.5em
+    padding: 1em
+    
   &>section 
     +column-block
 
   &>header
     +bottom-seperator
     text-align: center
-        
+    padding: 1em
+    
     +column-block
     h1
       +non-important-font($h1-font-size)
@@ -158,4 +169,5 @@ a
   &:hover
     cursor: pointer
         
+    
 @import syntax-highlight
