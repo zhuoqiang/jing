@@ -29,11 +29,23 @@ var i18nResource = {
             'programming': '编程',
             'english': '英文',
             'opensource': '开源',
-            'configuration': '配置',
+            'config': '配置',
             'compiler': '编译器',
             'concurrent': '并发',
             'Tao can Talk': '道可叨',
-            'Qiang': '强'
+            'Qiang': '强',
+            'misc': '其它',
+            'database': '数据库',
+            'security': '安全',
+            'poem': '诗',
+            'performance': '性能',
+            'design':'设计',
+            'blog':'博客',
+            'political':'政治',
+            'review':'品评',
+            'essay':'随笔',
+            'life':'生活',
+            'mobile':'移动'
         }
     }
 };
@@ -69,14 +81,13 @@ $(document).ready(function() {
         t.html(moment(time).fromNow());
     });
 
-    // $('article>footer').hide();
-    
-    // $('article').hover(
-    //     function () {
-    //         $(this).find('footer').show();
-    //     },
-    //     function () {
-    //         $(this).find('footer').hide();
-    //     }
-    // );
+    $('.kbd').each(function() {
+        var t = $(this);
+        var key = t.html();
+        key = $.trim(key)
+        // key = key.toUpperCase();
+        key = key.replace(/ +/g, '-');
+        t.html(key);
+    });
+
 })
