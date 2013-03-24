@@ -20,3 +20,9 @@ Live demo: http://zhuoqiang.me
 * Date time l10n using moment.js
 
 * Math input using MathJax.js
+
+TODOs:
+
+* Basic layout for IE 6
+
+* enhanced 404 page
