@@ -8,6 +8,9 @@
     <title>{% block title %}{{ SITENAME }}{% if SITESUBTITLE %} | {{ SITESUBTITLE }}{% endif %}{% endblock title %}</title>
     <meta name="viewport" content="width=device-width">
     <meta name="author" content="{{ AUTHOR }}">
+    {% if FAVICON %}
+    <link rel="shortcut icon" type="image/x-icon" href="{{FAVICON}}">
+    {% endif %}
     {% include 'feed.html' %}
     <link rel="stylesheet" href="{{ SITEURL }}/theme/css/app.css">
     <script src="{{ SITEURL }}/theme/js/vendor/custom.modernizr.js"></script>
@@ -36,7 +39,9 @@
     <script src="{{ SITEURL }}/theme/js/vendor/moment-lang.min.js"></script>    
     <script src="{{ SITEURL }}/theme/js/vendor/i18next-1.6.0.min.js"></script>    
     <script src="{{ SITEURL }}/theme/js/main.js"></script>
+    {% if MATHJAX %}
     <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_HTMLorMML"></script>
+    {% endif %}
     {% if GOOGLE_ANALYTICS %}
     <script>
       var _gaq=[['_setAccount','{{ GOOGLE_ANALYTICS }}'],['_trackPageview']];
