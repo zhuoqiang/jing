@@ -54,19 +54,9 @@
 
 @import font-awesome
 
-$seperator: 1px solid rgb(197, 197, 197)
-
-=bottom-seperator
-  border-bottom: $seperator
-    
-=column-block($child: '*', $columns:12, $float:left)
-  +grid-row
-  &>#{$child}
-    +grid-column($columns:$columns, $float:$float)
-
-=non-important-font($font-size: $small-font-size)
-  font-size: $font-size
-  color: $small-font-color
+$icon-tag: "\f024"
+$icon-folder: "\f02c"
+$icon-heart: "\f029"
       
 =font-prefix($content)
   &:before
@@ -80,8 +70,19 @@ $seperator: 1px solid rgb(197, 197, 197)
     display: inline-block
     
       
-$icon-tag: "\f024"
-$icon-folder: "\f02c"
+$seperator: 1px solid rgb(197, 197, 197)
+
+=bottom-seperator
+  border-bottom: $seperator
+    
+=column-block($child: '*', $columns:12, $float:left)
+  +grid-row
+  &>#{$child}
+    +grid-column($columns:$columns, $float:$float)
+
+=non-important-font($font-size: $small-font-size)
+  font-size: $font-size
+  color: $small-font-color
       
 ul
   list-style-type: square
@@ -191,5 +192,7 @@ a
 .tag
   +font-prefix($icon-tag)
       
-    
+.heart
+  +font-prefix($icon-heart)
+  
 @import syntax-highlight
