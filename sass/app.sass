@@ -68,6 +68,21 @@ $seperator: 1px solid rgb(197, 197, 197)
   font-size: $font-size
   color: $small-font-color
       
+=font-prefix($content)
+  &:before
+    content: $content + "\a0"
+    font-family: FontAwesome
+    font-weight: normal
+    font-style: normal
+    text-decoration: inherit
+    -webkit-font-smoothing: antialiased
+    speak: none
+    display: inline-block
+    
+      
+$icon-tag: "\f024"
+$icon-folder: "\f02c"
+      
 ul
   list-style-type: square
     
@@ -97,6 +112,7 @@ article
       +inline-list
       text-align: right
       +non-important-font
+
       li
         float: right
       
@@ -169,5 +185,11 @@ a
   &:hover
     cursor: pointer
         
+.category
+  +font-prefix($icon-folder)
+
+.tag
+  +font-prefix($icon-tag)
+      
     
 @import syntax-highlight
