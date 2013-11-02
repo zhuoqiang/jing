@@ -25,8 +25,11 @@ Setup developement environment
 -------------------------------
 
  sudo gem install compass
+ 
  sudo gem install zurb-foundation
+ 
  sudo gem install sass
+ 
  compass watch
   
  
