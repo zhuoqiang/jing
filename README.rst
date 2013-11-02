@@ -21,8 +21,19 @@ Live demo: http://zhuoqiang.me
 
 * Math input using MathJax.js
 
-TODOs:
+Setup developement environment
+-------------------------------
+
+ sudo gem install compass
+ sudo gem install zurb-foundation
+ sudo gem install sass
+ compass watch
+  
+ 
+TODOs
+--------
 
 * Basic layout for IE 6
-
-* enhanced 404 page
+* better 404 page
+* search toolbox
+* pages
