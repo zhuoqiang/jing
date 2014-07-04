@@ -46,6 +46,7 @@ var i18nResource = {
             'essay':'随笔',
             'life':'生活',
             'mobile':'移动'
+            'algorithm':'算法',
         }
     }
 };
