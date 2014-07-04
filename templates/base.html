@@ -39,7 +39,12 @@
     <script src="{{ SITEURL }}/theme/js/vendor/moment-lang.min.js"></script>    
     <script src="{{ SITEURL }}/theme/js/vendor/i18next-1.6.0.min.js"></script>    
     <script src="{{ SITEURL }}/theme/js/main.js"></script>
-    {% if MATHJAX %}
+    {% if MATHJAX or (article and article.ipython) %}
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+      });
+    </script>      
     <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_HTMLorMML"></script>
     {% endif %}
     {% if GOOGLE_ANALYTICS %}
